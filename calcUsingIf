@@ -1,0 +1,25 @@
+a=$1
+b=$2
+echo "Enter choice: "
+echo "1.Add"
+echo "2.Subtract"
+echo "3.Multiplication"
+echo "4.Division"
+read ch
+if test $ch -eq 1
+then
+res=`expr $a + $b`
+fi
+if test $ch -eq 2
+then
+res=`expr $a - $b`
+fi
+if test $ch -eq 3
+then
+res=`expr $a \* $b`
+fi
+if test $ch -eq 4
+then
+res=`expr $a / $b`
+fi
+echo "Result: $res"

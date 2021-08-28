@@ -1,0 +1,13 @@
+a=$1
+b=$2
+c=$3
+mx=$a
+if test $b -gt $mx
+then
+mx=$b
+fi
+if test $c -gt $mx
+then
+mx=$c
+fi
+echo "Max among three is: $mx"
