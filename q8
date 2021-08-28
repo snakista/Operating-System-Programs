@@ -1,0 +1,8 @@
+echo "Enter file path: "
+read pth
+character=$(cat $pth | wc -c)
+words=$(cat $pth | wc -w)
+lines=$(cat $pth | wc -l)
+echo "No of characters: $character"
+echo "No of words: $words"
+echo "No of lines: $lines"

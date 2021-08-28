@@ -1,0 +1,7 @@
+cat $1 >> $2
+if [ $? -eq 0 ]
+then
+echo "File copied successfully!"
+else
+echo "provide correct file names!"
+fi

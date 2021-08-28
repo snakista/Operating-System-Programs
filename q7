@@ -1,0 +1,12 @@
+echo "Enter range: "
+echo "Enter a: "
+read a
+echo "Enter b: "
+read b
+for ((i=a;i<=b;i++))
+do
+if ((i%2==0))
+then
+echo "$i"
+fi
+done

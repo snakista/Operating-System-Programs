@@ -1,0 +1,8 @@
+if [ -d $1 ]
+then
+echo "No of file is $(find $1 -type f | wc -l)"
+echo "No of directories is $(find $1 -type d | wc -l)"
+else
+echo "[ERROR] please provide directory!"
+exit 1
+fi

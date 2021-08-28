@@ -1,0 +1,21 @@
+ch='y'
+while [ $ch = 'y' ]
+do
+echo "1. No of Users logged into system"
+echo "2. Print calender for current year"
+echo "3. Print the date"
+echo "4. Exit"
+echo "Make your choice: "
+read d
+case $d in
+1) who | wc -l
+;;
+2) cal 2011
+;;
+3) date
+;;
+*) break
+esac
+echo "Do you want to continue (y/n): "
+read ch
+done
